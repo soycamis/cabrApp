@@ -1,0 +1,28 @@
+{
+  "name": "cabrapp",
+  "version": "1.0.0",
+  "description": "App realizada por el equipo 6 en el mini hackatonsito en DevF",
+  "main": "/app/index.js",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-route": "^1.6.5",
+    "angularfire": "^2.3.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "materialize-css": "^0.99.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soycamis/cabrApp.git"
+  },
+  "author": "Camilo Sosa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soycamis/cabrApp/issues"
+  },
+  "homepage": "https://github.com/soycamis/cabrApp#readme"
+}
