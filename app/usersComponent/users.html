@@ -1,0 +1,30 @@
+<div class="row">
+    <h3>Posibles parejas</h3>
+  </div>
+<div class="row">
+  <div class="col m4" ng-repeat="user in vm.users">
+
+    <div class="card hoverable">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator responsive-img" ng-src="{{ user.photo }}">
+      </div>
+
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4 truncate">{{ user.username }}<i class="material-icons right">more_vert</i></span>
+        <div class="divider"></div>
+        <div class="row center-align user-marginTop">
+          <div class="col m6 "><a><i ng-click="vm.nope(user.username)" class="material-icons small user-down">thumb_down</i></a></div>
+          <div class="col m6 "><a><i ng-click="vm.like(user.uid, user.username)" class="material-icons small user-up">thumb_up</i></a></div>
+        </div>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">{{ user.name }}<i class="material-icons right">close</i></span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        <div class="divider"></div>
+        <p><i class="material-icons tiny">location_on</i> {{ user.address.city }}</p>
+        <p><i class="material-icons tiny">phone</i> {{ user.phone }}</p>
+        <p><i class="material-icons tiny">email</i> {{ user.email }}</p>
+      </div>
+    </div>
+  </div>
+</div>

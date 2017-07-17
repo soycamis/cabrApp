@@ -1,0 +1,21 @@
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a class="brand-logo">CabrApp</a>
+      <ul class="right hide-on-med-and-down">
+        <li id="login-name">
+          <a  ng-href="/#!app"><img class="circle login-photoProfile" ng-src="{{ vm.photo }}">Hola {{ vm.user }}</a>
+        </li>
+        <li id="login-match">
+          <a ng-href="/#!match">Match</a>
+        </li>
+        <li id="login-signin">
+          <a ng-click="vm.signIn()" class="btn waves-effect waves-light blue">Iniciar con Facebook</a>
+        </li>
+        <li id="login-signout">
+          <a ng-click="vm.signOut()" class="btn waves-effect waves-light red">Cerrar Sesion</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

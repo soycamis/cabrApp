@@ -1,0 +1,26 @@
+.login-photoProfile {
+  width: 44px;
+  vertical-align: middle;
+  margin-right: .5rem;
+}
+
+.login-logo {
+  border-radius: 20%;
+  width: 80px;
+  margin: 0 .5rem .4rem .5rem;
+}
+
+.parallax-container-small {
+  /*height: 200px;*/
+}
+
+.user-marginTop {
+  margin-top: 1rem;
+}
+
+.user-down,
+.user-up {
+  cursor: pointer;
+}
+.user-down { color: #d50000; }
+.user-up { color: #00c853; }

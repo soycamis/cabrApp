@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>cabrApp</title>
+  <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="app/assets/css/style.css">
+</head>
+<body ng-app="cabrApp">
+
+  <div>
+    <login-component></login-component>
+    <div class="ng-view"></div>
+  </div>
+
+  <!-- jQuery, Materialize -->
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/materialize-css/dist/js/materialize.js"></script>
+
+  <!-- Angularjs -->
+  <script src="node_modules/angular/angular.js" ></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+
+  <!-- Firebase -->
+  <script src="node_modules/firebase/firebase.js"></script>
+  <script src="node_modules/angularfire/dist/angularfire.js"></script>
+
+  <!-- cabrApp -->
+  <script src="app/index.js"></script>
+  <script src="app/router.js"></script>
+  <script src="app/loginComponent/login.js"></script>
+  <script src="app/indexComponent/index.js"></script>
+  <script src="app/appComponent/app.js"></script>
+  <script src="app/usersComponent/users.js"></script>
+  <script src="app/matchComponent/match.js"></script>
+  <script src="app/matchlistComponent/matchlist.js"></script>
+  <script src="app/footerComponent/footer.js"></script>
+</body>
+</html>

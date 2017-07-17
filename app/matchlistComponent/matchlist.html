@@ -1,0 +1,26 @@
+<div class="row center-align">
+  <h4>Match</h4>
+</div>
+
+<div class="row">
+  <div class="col m4">
+    <!-- avatar y username de usuario activo -->
+    <div ng-repeat="user in vm.userCurrent">
+
+      <img class="circle" ng-src="{{ user.photo }}">
+      <p class="center-align">{{ user.name }}</p>
+
+    </div>
+  </div>
+  <div class="col m8">
+    <!-- inicio de lista con avatar -->
+    <ul class="collection">
+    <li class="collection-item avatar" ng-repeat="match in vm.matchList">
+      <img ng-src="{{ match.photo }}" class="circle">
+      <span class="title">{{ match.name }}</span>
+      <p>{{ match.address.city }}</p>
+      <a class="secondary-content"><i class="material-icons">send</i></a>
+    </li>
+  </ul>
+  </div>
+</div>
